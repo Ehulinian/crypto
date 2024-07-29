@@ -1,3 +1,4 @@
+import logo from '../../../assets/images/Logo.svg';
 import Button from '../../UI/button/Button';
 import styles from './TopBar.module.scss';
 
@@ -5,11 +6,7 @@ export default function TopBar() {
 	return (
 		<div className={styles.topBar}>
 			<a href="#" className={styles.logoLink}>
-				<img
-					className={styles.logo}
-					src="../src/assets/images/Logo.svg"
-					alt="LOGO"
-				/>
+				<img className={styles.logo} src={logo} alt="LOGO" />
 			</a>
 
 			<div className={styles.topBarNav}>
