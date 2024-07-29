@@ -259,20 +259,17 @@
 .arrowsIcon {
 	@include on-phone {
 		background-image: url('../../assets/icons/arrows-icon.svg');
-
 		width: 28.75px;
 		height: 32.85px;
 	}
 	@include on-tablet {
 		background-image: url('../../assets/icons/arrows-icon.svg');
-
 		width: 28.75px;
 		height: 32.85px;
 	}
 
 	@include on-desktop {
 		background-image: url('../../assets/icons/arrows-icon.svg');
-
 		width: 34.84px;
 		height: 39.82px;
 	}

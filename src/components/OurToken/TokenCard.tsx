@@ -12,7 +12,7 @@ const TokenCard: React.FC<TokenCardProps> = ({ card }) => {
 			<div className={styles.contentCard}>
 				<div className={styles.wrapper}>
 					<div className={styles.icon}>
-						<a href="#menu" className={`${styles.icon} ${card.iconClass}`}></a>
+						<a className={`${styles.icon} ${card.iconClass}`}></a>
 					</div>
 					<h3 className={styles.itemTitle}>{card.title}</h3>
 					<div className={styles.itemDescription}>{card.description}</div>

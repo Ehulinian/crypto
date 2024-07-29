@@ -8,7 +8,7 @@ type Props = {
 const Icon: React.FC<Props> = ({ icon }) => {
 	return (
 		<div className={styles.iconContainer}>
-			<a href="#menu" className={`${styles.icon} ${icon}`}></a>
+			<a className={`${styles.icon} ${icon}`}></a>
 		</div>
 	);
 };
