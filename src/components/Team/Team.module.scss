@@ -1,0 +1,433 @@
+@import '../../styles/utils/global.scss';
+
+.team {
+	height: 100%;
+	position: relative;
+	z-index: 6;
+}
+
+.teamContent {
+	@include on-phone {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+		gap: 40px;
+	}
+
+	@include on-tablet {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+		gap: 60px;
+	}
+
+	@include on-desktop {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+		gap: 100px;
+	}
+}
+
+.cardTextWrapper {
+	display: flex;
+	flex-direction: column;
+	@include on-phone {
+		align-items: center;
+		justify-content: center;
+		gap: 16px;
+		width: 230px;
+		height: 108px;
+	}
+
+	@include on-tablet {
+		align-items: center;
+		justify-content: center;
+		gap: 16px;
+		width: 210px;
+		height: 108px;
+	}
+
+	@include on-desktop {
+	}
+}
+
+.teamContentIntro {
+	@include on-phone {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		width: 90%;
+	}
+
+	@include on-tablet {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		width: 90%;
+	}
+
+	@include on-desktop {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		width: 60%;
+	}
+}
+
+.teamCard {
+	@include on-phone {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: space-evenly;
+		position: relative;
+		overflow: hidden;
+		width: 343px;
+		height: 266px;
+		border-radius: 24px;
+		background: transparent;
+		z-index: 2;
+	}
+
+	@include on-tablet {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: space-evenly;
+		position: relative;
+		overflow: hidden;
+		width: 314px;
+		height: 266px;
+		border-radius: 24px;
+		background: transparent;
+		z-index: 2;
+	}
+
+	@include on-desktop {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: space-evenly;
+		position: relative;
+		overflow: hidden;
+		width: 280px;
+		height: 266px;
+		border-radius: 24px;
+		background: transparent;
+		z-index: 2;
+	}
+}
+
+.teamCard::before {
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: linear-gradient(
+			97.94deg,
+			rgba(41, 46, 75, 0.375),
+			rgba(41, 46, 75, 0.175),
+			rgba(48, 58, 120, 0.5)
+		),
+		radial-gradient(
+			62.64% 89.41% at -5.37% -16.9%,
+			rgba(61, 165, 245, 0.5),
+			rgba(62, 69, 238, 0)
+		),
+		radial-gradient(
+			53.39% 67.78% at 100% 106.39%,
+			rgba(223, 29, 255, 0.5),
+			rgba(72, 205, 255, 0)
+		);
+	transform: rotate(180deg);
+	z-index: 1;
+	transition: opacity 0.3s ease-in-out;
+}
+
+.teamCard::after {
+	content: '';
+	position: absolute;
+
+	bottom: 10px;
+	width: 100%;
+	height: 100%;
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
+	background-position: center;
+
+	-webkit-mask-image: linear-gradient(
+		to top,
+		rgba(0, 0, 0, 0) 20%,
+		rgba(0, 0, 0, 0) 30%
+	);
+	mask-image: linear-gradient(to top, rgba(0, 0, 0, 0) 5%, rgb(0, 0, 0) 30%);
+	z-index: 1;
+	transition: opacity 0.3;
+}
+
+.background1::after {
+	background-image: url('../../assets/images/young-handsome-man-with-golden-bitcoin-with-dollar-cash-other-hand-isolated-black-removebg-preview.svg');
+	width: 280px;
+	height: 203px;
+
+	background-size: auto;
+}
+
+.background2::after {
+	background-image: url('../../assets/images/portrait-confident-businessman-dressed-suit-removebg-preview.svg');
+	width: 280px;
+	height: 203.61px;
+
+	background-size: auto;
+}
+
+.background3::after {
+	background-image: url('../../assets/images/young-african-american-girl-teen-student-denim-clothes-backpack-hold-bitcoin-isolated-blue-wall-min-removebg-preview.svg');
+	width: 317px;
+	height: 203px;
+
+	background-size: auto;
+}
+
+.background4::after {
+	background-image: url('../../assets/images/businessmen-internet-technology-commerce-bitcoin-mining-studio-official-removebg-preview.svg');
+	width: 280px;
+	height: 203px;
+
+	background-size: auto;
+}
+
+.teamCard:hover::before {
+	background: rgba(185, 130, 255, 1);
+
+	opacity: 0.6;
+}
+
+.teamCard:hover::after {
+	z-index: 0;
+	bottom: 25px;
+	opacity: 1;
+
+	-webkit-mask-image: linear-gradient(
+		to top,
+		rgba(0, 0, 0, 0) 20%,
+		rgba(0, 0, 0, 0) 30%
+	);
+	mask-image: linear-gradient(to top, rgba(0, 0, 0, 0) 0%, rgb(0, 0, 0) 0%);
+}
+
+.teamContentBottom {
+	@include on-phone {
+		display: flex;
+		gap: 20px;
+		flex-direction: column;
+	}
+	@include on-tablet {
+		display: grid;
+		gap: 20px;
+		grid-template-columns: repeat(2, 1fr);
+		grid-template-rows: repeat(2, auto);
+	}
+
+	@include on-desktop {
+		display: flex;
+		flex-direction: row;
+		gap: 20px;
+	}
+}
+
+.itemTitle {
+	font-size: 20px;
+	font-weight: 600;
+	line-height: 26px;
+	text-align: left;
+
+	color: rgba(233, 236, 239, 1);
+}
+
+.itemDescription {
+	@include on-phone {
+		font-size: 16px;
+		font-weight: 400;
+		line-height: 22.4px;
+		text-align: center;
+
+		color: rgba(233, 236, 239, 1);
+	}
+
+	@include on-tablet {
+		font-size: 16px;
+		font-weight: 400;
+		line-height: 22.4px;
+		text-align: center;
+
+		color: rgba(233, 236, 239, 1);
+	}
+
+	@include on-desktop {
+		font-size: 16px;
+		font-weight: 400;
+		line-height: 22.4px;
+		text-align: center;
+
+		color: rgba(233, 236, 239, 1);
+	}
+}
+
+.itemTitle,
+.itemDescription {
+	visibility: hidden;
+	opacity: 0;
+	transition: opacity 0.3s ease-in-out, visibility 0.3s;
+	margin: 0;
+}
+
+.teamCard .itemTitle1 {
+	display: block;
+	margin: 0;
+	z-index: 5;
+}
+
+.teamCard:hover .itemTitle1 {
+	display: none;
+}
+
+.teamCard:hover .itemTitle,
+.teamCard:hover .itemDescription {
+	visibility: visible;
+	opacity: 1;
+	z-index: 3;
+}
+
+.icons {
+	display: flex;
+	gap: 29px;
+	visibility: hidden;
+	opacity: 0;
+	transition: opacity 0.3s ease-in-out, visibility 0.3s;
+}
+
+.teamCard:hover .icons {
+	visibility: visible;
+	opacity: 1;
+	z-index: 3;
+}
+
+.iconContainer {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	position: relative;
+	z-index: 4;
+	width: 30px;
+	height: 30px;
+	border-radius: 4px;
+	background: linear-gradient(118.07deg, #ffffff -4.13%, #dde2e3 103.49%);
+	box-shadow: 1px 1px 2px 0px rgba(224, 229, 230, 1) inset;
+}
+
+.icon {
+	position: absolute;
+	background-size: contain;
+	background-repeat: no-repeat;
+}
+
+.icon1 {
+	width: 8.03px;
+	height: 15px;
+
+	background-image: url('../../assets/icons/Icon\ awesome-facebook-f.svg');
+}
+
+.icon2 {
+	width: 15px;
+	height: 12.18px;
+
+	background-image: url('../../assets/icons/Icon\ awesome-twitter.svg');
+}
+
+.icon3 {
+	width: 15px;
+	height: 15px;
+
+	background-image: url('../../assets/icons/Icon\ awesome-instagram.svg');
+}
+
+.icon4 {
+	width: 15px;
+	height: 14.99px;
+
+	background-image: url('../../assets/icons/Icon\ awesome-linkedin-in.svg');
+}
+
+.teamContentMainTitle {
+	font-size: 20px;
+	font-weight: 600;
+	line-height: 26px;
+	text-align: left;
+	color: rgba(185, 130, 255, 1);
+}
+
+.teamContentTitle {
+	@include on-phone {
+		font-size: 32px;
+		font-weight: 900;
+		line-height: 41.6px;
+		text-align: center;
+		padding-block: 4px 24px;
+	}
+
+	@include on-tablet {
+		font-size: 40px;
+		font-weight: 900;
+		line-height: 52px;
+		text-align: left;
+		padding-block: 4px 24px;
+	}
+
+	@include on-desktop {
+		font-size: 50px;
+		font-weight: 900;
+		line-height: 65px;
+		text-align: left;
+		padding-block: 4px 24px;
+	}
+}
+
+.teamContentDescription {
+	@include on-phone {
+		font-size: 14px;
+		font-weight: 400;
+		line-height: 19.6px;
+		text-align: center;
+		width: 100%;
+	}
+
+	@include on-tablet {
+		font-size: 16px;
+		font-weight: 400;
+		line-height: 22.4px;
+		text-align: center;
+		width: 86%;
+	}
+
+	@include on-desktop {
+		font-size: 16px;
+		font-weight: 400;
+		line-height: 22.4px;
+		text-align: center;
+		width: 77%;
+	}
+}
+
+.teamContentMainTitle,
+.teamContentTitle,
+.teamContentDescription {
+	margin: 0;
+}

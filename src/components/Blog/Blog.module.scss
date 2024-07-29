@@ -1,0 +1,239 @@
+@import '../../styles/utils/global.scss';
+
+.bottomContent {
+	@include on-phone {
+		display: flex;
+		flex-direction: column;
+		gap: 24px;
+	}
+	@include on-tablet {
+		display: flex;
+		flex-direction: column;
+		gap: 48px;
+	}
+	@include on-desktop {
+		display: flex;
+		flex-direction: row;
+		gap: 20px;
+	}
+}
+
+.blog {
+	height: 100%;
+}
+
+.backgroundImage1 {
+	@include on-phone {
+		background-image: url('../../assets/images/bitcoin-digital-design-with-blue-background-image-phone.svg');
+		width: 343px;
+		height: 258px;
+		background-repeat: no-repeat;
+	}
+
+	@include on-tablet {
+		background-image: url('../../assets/images/bitcoin-digital-design-with-blue-background-image1.svg');
+		width: 648px;
+		height: 439px;
+		background-repeat: no-repeat;
+	}
+
+	@include on-desktop {
+		background-image: url('../../assets/images/bitcoin-digital-design-with-blue-background-image 1.svg');
+		width: 380px;
+		height: 258px;
+
+		background-repeat: no-repeat;
+	}
+}
+
+.backgroundImage2 {
+	@include on-phone {
+		background-image: url('../../assets/images/1103-phone.svg');
+		width: 343px;
+		height: 258px;
+
+		background-repeat: no-repeat;
+	}
+
+	@include on-tablet {
+		background-image: url('../../assets/images/11031.svg');
+		width: 648px;
+		height: 439px;
+
+		background-repeat: no-repeat;
+	}
+
+	@include on-desktop {
+		background-image: url('../../assets/images/1103.svg');
+		width: 380px;
+		height: 258px;
+
+		background-repeat: no-repeat;
+	}
+}
+
+.backgroundImage3 {
+	@include on-phone {
+		background-image: url('../../assets/images/bitcoin-cryptocurrency-digital-money-exchange-blockchain-image-phone.svg');
+		width: 343px;
+		height: 258px;
+
+		background-repeat: no-repeat;
+	}
+
+	@include on-tablet {
+		background-image: url('../../assets/images/bitcoin-cryptocurrency-digital-money-exchange-blockchain-image22.svg');
+		width: 648px;
+		height: 439px;
+
+		background-repeat: no-repeat;
+	}
+
+	@include on-desktop {
+		background-image: url('../../assets/images/bitcoin-cryptocurrency-digital-money-exchange-blockchain-image\ 2.svg');
+		width: 380px;
+		height: 258px;
+
+		background-repeat: no-repeat;
+	}
+}
+
+.blogContent {
+	@include on-phone {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		gap: 40px;
+	}
+
+	@include on-tablet {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		gap: 60px;
+	}
+
+	@include on-desktop {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		gap: 100px;
+	}
+}
+
+.blogCard {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.blueStroke {
+	position: relative;
+	width: 230px;
+	border: 1px solid transparent;
+}
+
+.blueStroke::before {
+	content: '';
+	position: absolute;
+	top: -1px;
+	left: -1px;
+	right: -1px;
+	bottom: -1px;
+	border: 1px solid;
+	border-image: linear-gradient(225deg, #18c8ff 14.89%, #933ffe 85.85%);
+	border-image-slice: 1;
+	pointer-events: none;
+}
+
+.mainTitle,
+.secondTitle,
+.topDescription {
+	margin: 0;
+	text-align: center;
+}
+
+.cardData {
+	font-size: 14px;
+	font-weight: 600;
+	line-height: 19.6px;
+	text-align: left;
+}
+
+.mainTitle {
+	font-size: 20px;
+	font-weight: 600;
+	line-height: 26px;
+	text-align: center;
+	color: rgba(185, 130, 255, 1);
+}
+
+.secondTitle {
+	@include on-phone {
+	}
+
+	@include on-tablet {
+		font-size: 40px;
+		font-weight: 900;
+		padding-block: 4px 24px;
+		line-height: 52px;
+		text-align: center;
+	}
+
+	@include on-desktop {
+		font-size: 50px;
+		font-weight: 900;
+		padding-block: 4px 24px;
+		line-height: 65px;
+		text-align: center;
+	}
+}
+
+.topDescription {
+	font-size: 16px;
+	font-weight: 400;
+	line-height: 22.4px;
+	text-align: center;
+}
+
+.topContent {
+	@include on-phone {
+	}
+
+	@include on-tablet {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+		width: 78%;
+		height: 100%;
+	}
+
+	@include on-desktop {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+		width: 43%;
+		height: 100%;
+	}
+}
+
+.wrapperContent {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding-block: 16px 24px;
+	gap: 16px;
+}
+
+.cardTitle {
+	text-align: center;
+
+	font-size: 20px;
+	font-weight: 600;
+	line-height: 26px;
+	text-align: center;
+
+	margin: 0;
+}

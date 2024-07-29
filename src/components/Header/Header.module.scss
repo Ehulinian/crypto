@@ -1,0 +1,120 @@
+@import '../../styles/utils/global.scss';
+
+html,
+body {
+	height: 100%;
+	margin: 0;
+	padding: 0;
+}
+
+.intro {
+	@include on-phone {
+		width: 780px;
+		height: 100%;
+		width: 100%;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		padding-top: 136px;
+	}
+
+	@include on-tablet {
+		width: 780px;
+		height: 100%;
+		width: 100%;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		padding-top: 162px;
+	}
+
+	@include on-desktop {
+		width: 780px;
+		height: 100%;
+		width: 100%;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		padding-top: 162px;
+	}
+}
+
+.header {
+	position: relative;
+	overflow: visible;
+	width: 100%;
+	height: 100vh;
+	z-index: 2;
+
+	@include on-phone {
+		&::before {
+			content: '';
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100vh;
+			background-image: url('../../assets/images/Bg-header-mobile.svg');
+			background-position: center;
+			background-size: cover;
+			background-repeat: no-repeat;
+			z-index: -1;
+		}
+	}
+
+	@include on-tablet {
+		&::before {
+			content: '';
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100vh;
+			background-image: url('../../assets/images/header-bg-tablet-version.svg');
+			background-position: center;
+			background-size: cover;
+			background-repeat: no-repeat;
+			z-index: -1;
+		}
+	}
+
+	@include on-desktop {
+		&::before {
+			content: '';
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: calc(100vh + 109px);
+			background-image: url('../../assets/images/header-bg-desktop-version.svg');
+			background-position: center;
+			background-size: cover;
+			background-repeat: no-repeat;
+			z-index: -1;
+		}
+	}
+}
+
+.container {
+	@include on-phone {
+		max-width: 744px;
+		padding-inline: 16px;
+		margin-inline: auto;
+
+		height: 100%;
+	}
+
+	@include on-tablet {
+		max-width: 1440px;
+		padding-inline: 48px;
+		margin-inline: auto;
+
+		height: 100%;
+	}
+
+	@include on-desktop {
+		padding-inline: 130px;
+		margin-inline: auto;
+		height: 100%;
+	}
+}

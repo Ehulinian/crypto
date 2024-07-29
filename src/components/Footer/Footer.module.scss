@@ -1,0 +1,369 @@
+@import '../../styles/utils/global.scss';
+
+.footer {
+	display: flex;
+	align-items: center;
+	position: relative;
+	justify-content: flex-start;
+	z-index: 1;
+	width: 100%;
+	height: 809px;
+	@include on-phone {
+		background-image: url('../../assets/images/bg-gradient-img-footer-phone.svg');
+		position: absolute;
+		height: 863px;
+		background-size: cover;
+		background-position: center;
+		background-repeat: no-repeat;
+	}
+
+	@include on-tablet {
+		background-image: url('../../assets/images/bg-gradient-img-footer-version.svg');
+		position: absolute;
+		height: calc(507px + 55px);
+		background-size: cover;
+		background-position: center;
+		background-repeat: no-repeat;
+	}
+
+	@include on-desktop {
+		background-image: url('../../assets/images/bg-gradient-img-footer.svg');
+		position: absolute;
+		height: calc(507px + 55px);
+		background-size: contain;
+		background-position: left;
+		background-repeat: no-repeat;
+	}
+}
+
+.bgFooter {
+	@include on-phone {
+		background-image: url('../../assets/images/bg-image-phone.svg');
+		position: absolute;
+		background-size: cover;
+		background-position: center;
+		background-repeat: no-repeat;
+		transform: translateY(-63%);
+		width: 375px;
+		height: 835px;
+	}
+
+	@include on-tablet {
+		background-image: url('../../assets/images/bg-footer-tablet-version-circles.svg');
+		position: absolute;
+		background-size: cover;
+		background-position: center;
+		background-repeat: no-repeat;
+		transform: translateY(-79%);
+		width: 744px;
+		height: 1210px;
+	}
+
+	@include on-desktop {
+		background-image: url('../../assets/images/footer-bg-desktop-version.svg');
+		position: absolute;
+		background-size: cover;
+		background-position: center;
+		background-repeat: no-repeat;
+		transform: translateY(-63%);
+		width: 1440px;
+		height: 1503px;
+	}
+}
+
+.container {
+	@include on-phone {
+		max-width: 1920px;
+		margin-inline: auto;
+		padding-inline: 16px;
+		display: flex;
+	}
+
+	@include on-tablet {
+		max-width: 1920px;
+		margin-inline: 0;
+		padding-inline: 48px;
+		display: flex;
+	}
+
+	@include on-desktop {
+		max-width: 1920px;
+		margin-inline: 0;
+		padding-inline: 130px;
+		display: flex;
+	}
+}
+
+.navItem {
+	text-align: center;
+}
+
+.navLink {
+	@include on-phone {
+		color: white;
+		width: 42px;
+		height: 20px;
+		font-size: 14px;
+		font-weight: 600;
+		line-height: 19.6px;
+
+		text-decoration: none;
+	}
+
+	@include on-tablet {
+		color: white;
+		width: 42px;
+		height: 20px;
+		font-size: 14px;
+		font-weight: 600;
+		line-height: 19.6px;
+
+		text-decoration: none;
+	}
+
+	@include on-desktop {
+		color: white;
+		width: 42px;
+		height: 20px;
+		font-size: 14px;
+		font-weight: 600;
+		line-height: 19.6px;
+
+		text-decoration: none;
+	}
+}
+
+.navList {
+	@include on-phone {
+		list-style: none;
+		display: flex;
+		flex-direction: column;
+
+		margin: 0px;
+		padding: 0;
+		gap: 24px;
+	}
+
+	@include on-tablet {
+		list-style: none;
+		display: flex;
+		flex-direction: column;
+
+		margin: 0px;
+		padding: 0;
+		gap: 24px;
+	}
+
+	@include on-desktop {
+		list-style: none;
+		display: flex;
+		flex-direction: row;
+
+		margin: 0px;
+
+		gap: 32px;
+		padding-left: 48px;
+	}
+}
+
+.logoLink {
+	@include on-phone {
+		text-decoration: none;
+		color: inherit;
+		text-align: center;
+	}
+
+	@include on-tablet {
+		text-decoration: none;
+		color: inherit;
+		text-align: left;
+	}
+
+	@include on-desktop {
+		text-decoration: none;
+		text-align: left;
+		color: inherit;
+	}
+}
+
+.logo {
+	width: 183.38px;
+	height: 48px;
+}
+
+.footerContent {
+	@include on-phone {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: flex-start;
+		gap: 40px;
+		width: 100%;
+	}
+
+	@include on-tablet {
+		display: flex;
+		flex-direction: row;
+		align-items: center;
+		justify-content: flex-start;
+		gap: 121px;
+		width: 100%;
+		height: 30vh;
+	}
+
+	@include on-desktop {
+		display: flex;
+		flex-direction: row;
+		align-items: center;
+		justify-content: center;
+		gap: 163px;
+		height: 100%;
+		width: 100%;
+	}
+}
+
+.wrapper {
+	@include on-phone {
+		width: 343px;
+		height: 236px;
+		display: flex;
+		flex-direction: column;
+		gap: 32px;
+	}
+
+	@include on-tablet {
+		width: 380px;
+		height: 269px;
+		display: flex;
+		flex-direction: column;
+		gap: 32px;
+	}
+
+	@include on-desktop {
+		width: 380px;
+		height: 269px;
+		display: flex;
+		flex-direction: column;
+		gap: 32px;
+	}
+}
+
+.input {
+	@include on-phone {
+		width: 320px;
+		height: 56px;
+		padding: 17px 0px 17px 20px;
+		gap: 10px;
+		border-radius: 10px;
+		background-image: url('../../assets/images/arrow.svg');
+		background-repeat: no-repeat;
+		background-position: 95% 49%;
+		border: none;
+	}
+
+	@include on-tablet {
+		width: 304px;
+		height: 56px;
+		padding-left: 20px;
+		gap: 10px;
+		border-radius: 10px;
+		background-image: url('../../assets/images/arrow.svg');
+		background-repeat: no-repeat;
+		background-position: 95% 49%;
+		border: none;
+	}
+
+	@include on-desktop {
+		width: 304px;
+		height: 56px;
+		padding-left: 20px;
+		gap: 10px;
+		border-radius: 10px;
+		background-image: url('../../assets/images/arrow.svg');
+		background-repeat: no-repeat;
+		background-position: 95% 49%;
+		border: none;
+	}
+}
+
+.private {
+	width: 228px;
+	height: 17px;
+
+	font-size: 12px;
+	font-weight: 400;
+	line-height: 16.8px;
+	text-align: left;
+
+	color: rgba(241, 243, 245, 1);
+
+	opacity: 0.3;
+}
+
+.description {
+	@include on-phone {
+		font-size: 14px;
+		font-weight: 600;
+		line-height: 19.6px;
+		text-align: center;
+		color: rgba(206, 212, 218, 1);
+		margin: 0;
+	}
+
+	@include on-tablet {
+		font-size: 14px;
+		font-weight: 600;
+		line-height: 19.6px;
+		text-align: left;
+		color: rgba(206, 212, 218, 1);
+		margin: 0;
+	}
+
+	@include on-desktop {
+		font-size: 14px;
+		font-weight: 600;
+		line-height: 19.6px;
+		text-align: left;
+		color: rgba(206, 212, 218, 1);
+		margin: 0;
+	}
+}
+
+.private2 {
+	width: 228px;
+	height: 17px;
+	margin: 0;
+
+	font-size: 12px;
+	font-weight: 400;
+	line-height: 16.8px;
+	text-align: left;
+	position: relative;
+	top: 35%;
+	width: max-content;
+	margin: 0;
+
+	color: rgba(241, 243, 245, 1);
+
+	opacity: 0.3;
+}
+
+.nav {
+	@include on-phone {
+	}
+
+	@include on-tablet {
+		height: 100%;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+	}
+
+	@include on-desktop {
+		height: 100%;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
+}

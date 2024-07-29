@@ -1,0 +1,105 @@
+@import '../../../styles/utils/global.scss';
+
+.topBar {
+	padding-block: 26px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.logoLink {
+	text-decoration: none;
+	color: inherit;
+}
+
+.logo {
+	width: 183.38px;
+	height: 48px;
+}
+
+.icon {
+	@include on-phone {
+		display: block;
+	}
+
+	@include on-tablet {
+		display: block;
+	}
+
+	@include on-desktop {
+		display: none;
+	}
+}
+
+.navLink {
+	color: #fff;
+	text-decoration: none;
+	font-size: 14px;
+	line-height: 19.6px;
+	font-weight: 600;
+	width: 42px;
+	height: 20px;
+}
+
+.button {
+	width: 162px;
+	height: 48px;
+	padding: 13px 32px 13px 32px;
+
+	border-radius: 10px;
+	@include on-phone {
+		display: none;
+	}
+
+	@include on-tablet {
+		display: block;
+	}
+
+	@include on-desktop {
+		display: block;
+	}
+}
+
+.topBarList {
+	@include on-phone {
+		display: none;
+	}
+
+	@include on-tablet {
+		display: none;
+	}
+
+	@include on-desktop {
+		display: flex;
+		flex-direction: row-reverse;
+		gap: 32px;
+		margin: 0;
+		list-style: none;
+		padding-left: 0;
+	}
+}
+
+.topBarNav {
+	display: contents;
+}
+
+.menuIcon {
+	width: 24px;
+	height: 16.5px;
+
+	background-image: url('../../../assets/icons/Icon-burger-menu.svg');
+	background-size: cover;
+	@include hover(transform, scale(1.2));
+
+	@include on-phone {
+		display: block;
+	}
+
+	@include on-tablet {
+		display: block;
+	}
+
+	@include on-desktop {
+		display: none;
+	}
+}

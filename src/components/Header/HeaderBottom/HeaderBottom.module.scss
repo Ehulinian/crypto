@@ -1,0 +1,46 @@
+@import '../../../styles/utils/global.scss';
+
+.title {
+	@include on-phone {
+		margin: 0;
+		text-align: center;
+		font-weight: 900;
+		font-size: 48px;
+		line-height: 62.4px;
+	}
+
+	@include on-tablet {
+		margin: 0;
+		text-align: center;
+		font-weight: 900;
+		font-size: 64px;
+		line-height: 83.2px;
+	}
+
+	@include on-desktop {
+		margin: 0;
+		text-align: center;
+		font-weight: 900;
+		font-size: 85px;
+		line-height: 110.5px;
+	}
+}
+
+.description {
+	margin: 0;
+	text-align: center;
+	font-size: 16px;
+	line-height: 22.4px;
+	padding-block: 16px 32px;
+	color: rgba(206, 212, 218, 1);
+}
+
+.bottom {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	width: 780px;
+	height: 397px;
+
+	max-width: 100%;
+}
