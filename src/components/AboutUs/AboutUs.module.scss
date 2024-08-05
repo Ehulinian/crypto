@@ -132,7 +132,7 @@
 
 @include on-desktop {
 	.container {
-		@include containerCommon(130px, 200px);
+		@include containerCommon(130px, 290px);
 		&::before {
 			content: '';
 			position: absolute;
